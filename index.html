@@ -8,38 +8,37 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-
   <header class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <a class="navbar-brand" href="#">
+          <img src="/Imagenes/logo-bookmark.svg" alt="Bootstrap">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+          <div class="offcanvas-header">
             <a class="navbar-brand" href="#">
               <img src="/Imagenes/logo-bookmark.svg" alt="Bootstrap">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
-              <div class="offcanvas-header">
-                <a class="navbar-brand" href="#">
-                  <img src="/Imagenes/logo-bookmark.svg" alt="Bootstrap">
-                </a>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#features">FEATURES</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#pricing">PRICING</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">CONTACT</a>
-                  </li>
-                </ul>
-                <button type="button" class="btn btn-secondary">LOGIN</button>
-              </div>
-            </div>
-        </nav>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#features">FEATURES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">PRICING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-secondary">LOGIN</button>
+          </div>
+        </div>
+    </nav>
   </header>
   <main>
     <!-- Bloque azul -->
@@ -253,29 +252,6 @@
       </div>
     </div>
 </main>
-
-
-<!-- 
-
-<div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-4">Simple header</span>
-      </a>
-
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-      </ul>
-    </header>
-  </div>
--->
-
-
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
